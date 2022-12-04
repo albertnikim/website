@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Albert Neczajewski</title>
+    <link rel="icon" type="image/x-icon" href="imgs/gorilla.ico">
+    <link href="style.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+</head>
+<section id="home">
+<div class="top">
+<div class="intro"><h1>Albert Neczajewski</h1></div>
+    <div class="topnav">
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+
+
+
+      </div>
+    </section>
+    </div>
+    <div class="welcome">
+        <img src="imgs/monkey.jpg" alt="monkey" style="width:100%;">
+        <div class="centered">Hello there! My name's Albert Neczajewski and you are currently looking at my personal page. It's still a work in progress, more info soon!</div>
+      </div>
+      <section id="education"></section>
+      <div class="intro"><h1>Education</h1></div>
+
+      
+        <div class="edu">
+            <ul>
+                <li>English Philology - MA, University of Gdańsk | 2021 - Ongoing</li>
+                <br>
+                <li>English Philology - BA, University of Gdańsk | 2018-2021</li>
+                <br>
+                <li>IT Technician - secondary school, ZSMI Lębork | 2014-2018</li>
+              </ul>
+        </div>
+        <div class="eduphoto">
+            <img src = "imgs/zsmi.jpg" alt="zsmi"/>
+            <img src = "imgs/ug.jpg" alt="ug"/>
+        </div>
+      </section>
+      <section id="experience">
+      <div class="intro"><h1>Experience</h1></div>
+    
+        <div class="exp">
+            <ul>
+                <li>Kinguin.net - Customer Service Specialist |  2022 - Currently
+                </li>
+                <br>
+                <li>ESL Teacher - teaching practice | 2021</li>
+              </ul>
+        </div>
+        <div class="expphoto">
+            <img src = "imgs/kinguin.png" alt="kinguin"/>
+            <img src = "imgs/school.jpg" alt="school" />
+        </div>
+      </section>
+      <section id="skills">
+      <div class="intro"><h1>Skills</h1></div>
+      
+        <div class="skl">
+            <ul>
+                <h2>Technical</h2>
+                <li>Use of office software Word, Excel, PowerPoint - intermediate level.</li>
+                <br>
+                <li>English language - fluent.</li>
+                <br>
+                <li>German language - basic.
+                </li>
+                <br>
+                <li>Programming in Python - intermediate level.</li>
+                <br>
+                <li>HTML, CSS and JavaScript - intermediate level.</li>
+                <br>
+                <li>Working with Git</li>
+              </ul>
+              <ul>
+                <h2>Soft</h2>
+                <li>Working in a team - both as a leader and a follower.</li>
+                <br>
+                <li>Efficient work under stress.
+                </li>
+                <br>
+                <li>Quick adaptation to new situations.
+                </li>
+              </ul>
+        </div>
+      </section>
+
+ 
+
+        <section id="contact">
+            <div class="intro"><h1>Contact</h1></div>
+            <button class="accordion">E-mail</button>
+<div class="panel">
+    <a href="mailto:albertnikim@gmail.com"><p>Write me an e-mail to my personal account.</p></a>
+</div>
+            <button class="accordion">Github</button>
+<div class="panel">
+  <a href="https://github.com/albertnikim"><p>Check out my project on github.com.</p></a>
+</div>
+<button class="accordion">Facebook</button>
+<div class="panel">
+  <a href="https://www.facebook.com/albert.nikim"><p>Add my personal account to your Facebook friendlist.</p></a>
+</div>
+
+        </section>
+
+      <div class="back">
+        <a href="#home"><img src="imgs/home.png" alt="home"></a>
+      </div>
+
+      <footer>
+        <p>Created by: Albert Neczajewski | 2022</p>
+      </footer>
+
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>
